@@ -6,7 +6,7 @@ body {
   color: white;
   display: grid;
   gap: 5px;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: min-content max-content; /* min-content는 박스안에 든 문장에서 단어철자가 제일 긴것에 맞춰서 박스크기가 최소한으로 줄어든다. max-content는 박스안에 든 문장에 맞춰서 박스크기가 최대한 맞춰진다. */
   grid-auto-rows: 100px;
   margin-bottom: 30px;
 }

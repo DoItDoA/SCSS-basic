@@ -5,9 +5,9 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: auto 200px;
-  grid-template-rows: 100px repeat(2, 200px) 100px;
-  grid-template-areas:
+  grid-template-columns: auto 100px; /* auto를 쓰면 영역을 다 꽉 채우되, 2번째 열은 100px이고 1,3,4번째는 나머지 다 차지하고 균등하게 분배 */
+  grid-template-rows: 100px repeat(2, 200px) 100px; /* 반복되는 부분은 repeat 사용 */
+  grid-template-areas: /* 각 영역마다 이름 지정, 영역이기 때문에 영역별로 뭉쳐야하지 떨어지면 안된다. 영역의 모양은 꼭 사각형이어야한다 */
     "header header header header"
     "content content content nav"
     "content content content nav"
@@ -16,7 +16,7 @@ body {
 
 .header {
   background-color: #2ecc71;
-  grid-area: header;
+  grid-area: header; /* grid-template-areas에 쓰일 영역 이름 */
 }
 .content {
   background-color: #3498db;

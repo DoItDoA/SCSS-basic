@@ -13,13 +13,13 @@ body {
 .header {
   background-color: #2ecc71;
   grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 5; /* 첫줄 1~5까지 차지 */
 }
 .content {
   background-color: #3498db;
-  grid-column-start: 1;
+  grid-column-start: 1; /* 첫줄은 있으므로 두번째줄 1~4까지 차지 */
   grid-column-end: 4;
-  grid-row-start: 2;
+  grid-row-start: 2; /* 두번째줄에서 세로로 2~4까지 차지 */
   grid-row-end: 4;
 }
 .nav {

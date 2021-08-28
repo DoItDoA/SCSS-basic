@@ -6,11 +6,11 @@ body {
 .grid {
   display: grid;
   gap: 5px;
-  height: 50vh;
+  height: 50vh; /* 비율이기 때문에 따로 height 설정안해주면 표시 안됨 */
   grid-template:
-    "header header header header" 1fr
+    "header header header header" 1fr /* 행 높이 비율 1 */
     "content content content nav" 2fr
-    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
+    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr; /* 행 높이 비율/ 행 너비 비율( grid-template에서는 repeat사용 불가) */
 }
 
 .header {

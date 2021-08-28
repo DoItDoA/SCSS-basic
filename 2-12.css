@@ -18,9 +18,15 @@ body {
 }
 
 .grid:first-child {
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(100px, 1fr)
+  ); /* minmax(min)에 맞춰 칸을 가로로 여러개를 만들되 html의 개수 만큼 채운다. 빈공간이 남더라도 */
 }
 
 .grid:last-child {
-  grid-template-columns: repeat(auto-fit, minmax(100px, 150px));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(100px, 150px)
+  ); /* minmax(max)에 맞춰 칸을 html의 갯수 맞춰 칸을 맞추되 칸너비는 max에 맞춘다 */
 }
